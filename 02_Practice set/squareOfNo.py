@@ -5,6 +5,6 @@ print(a)
 
 square=a**2
 # square=a*a
-print("Square of {} is:".format(a),square)
+print(f"Square of {a} is:",square)
 
 

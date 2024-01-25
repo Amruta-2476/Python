@@ -53,3 +53,6 @@ MyVariableName = "John"
 > Snake Case
 Each word is separated by an underscore character:
 my_variable_name = "John" '''
+
+price = 490
+print(f"The price of mangoes is ${price}")

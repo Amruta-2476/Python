@@ -7,6 +7,7 @@ print("the value of 3*4 is ",(a*b))
 print("the value of 3/4 is ",(a/b))
 print("the value of 3%4 is ",(a%b))
 print("the value of 3 ^ 4 i.e 3 raise to 4 is  ",(a**b))
+# print("the value of 3 ^ 4 i.e 3 raise to 4 is  ",(a^b))
 
 # MANY VALUES TO MULTIPLE VARIABLES: 
 x, y, z = "Orange", "Banana", "Cherry"

@@ -16,7 +16,7 @@ if (a>b):
     # IN JAVA WE WRITE System.out.println(a+" is greater");
 	# SIMILARLY IN C WE WRITE printf ("%d is greater”, a);
 	# HERE'S AN EQUIVALENT EXAMPLE IN PYTHON:
-    print("a = {} is greater".format(a))
+    print(f"a = {a} is greater")
 
 else:
-    print("b = {} is greater".format(b))
+    print(f"b = {b} is greater")
