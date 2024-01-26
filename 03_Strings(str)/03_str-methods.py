@@ -65,9 +65,6 @@ print(story2.find('r'))        # 2 => first occurence
 |                           | max_splits. An empty string ("") as the separator means split at    |
 |                           | each character.                                                     |
 +---------------------------+---------------------------------------------------------------------+
-| index(value, start=0,     | Identical to find(). Raises ValueError if the substring is not      |
-|        end=None)          | found.                                                              |
-+---------------------------+---------------------------------------------------------------------+
 '''
 
 '''
