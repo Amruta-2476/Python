@@ -20,3 +20,12 @@ del list1[1]    #[1, 6, 2, 95, 43, 4]
 list1.remove(4)  #[1, 6, 2, 95, 43]
 
 print(list1)
+
+# copy the list using list()
+l1 = [1,2,3,4,5]
+l2 = list(l1)  # The list() function to create a copy of l1
+l1[0] = 22
+print(l1)  # Output: [22, 2, 3, 4, 5]
+print(l2)  # Output: [1, 2, 3, 4, 5]
+# modify l1, it doesn't affect the contents of l2, because they are different lists
+
