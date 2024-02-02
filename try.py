@@ -1,0 +1,10 @@
+from turtle import*
+t=Turtle()
+s=Screen()
+s.title("My Python Graphics")
+s.bgcolor("red")
+t.shape("turtle")
+t.left(90)
+t.speed(1)
+t.forward(100)
+done()
