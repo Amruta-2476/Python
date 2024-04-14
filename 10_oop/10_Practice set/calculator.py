@@ -7,11 +7,14 @@ class Calculator:
     def cube(self):
         print(f"Cube of the given number is {self.number **3}")
     def squareRoot(self):
-        print(f"Cube of the given number is {self.number **0.5}")
+        print(f"Square root of the given number is {self.number **0.5}")
+    def cubeRoot(self):
+        print(f"Cube root of the given number is {self.number **(1/3)}")
 
 n = int(input("Enter a number : "))
 num = Calculator(n)
 num.square()
 num.cube()
 num.squareRoot()
+num.cubeRoot()
     
