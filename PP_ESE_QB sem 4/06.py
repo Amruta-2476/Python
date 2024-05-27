@@ -1,18 +1,19 @@
 '''
 ### Python Assignment Operators
 
-Assignment operators in Python are used to assign values to variables. The most common assignment operator is the equal sign (`=`), which assigns the value on the right to the variable on the left. In addition to the basic assignment operator, Python provides several compound assignment operators that perform an operation and assign the result in one step.
+Assignment operators in Python are used to assign values to variables. The most common assignment operator is the equal sign (`=`), which assigns the value on the right to the variable on the left. Python also provides several compound assignment operators that perform an operation and assign the result in one step.
 
 #### Basic Assignment Operator:
 - `=`: Assigns the value on the right to the variable on the left.
-  ```python
-  x = 10
+  ```
+  x = 10    # x is assigned 10
   ```
 
 #### Compound Assignment Operators:
 - `+=`: Adds the right operand to the left operand and assigns the result to the left operand.
-  ```python
+  ```
   x += 5  # Equivalent to x = x + 5
+  Add and Assign
   ```
 - `-=`: Subtracts the right operand from the left operand and assigns the result to the left operand.
   ```python
@@ -81,6 +82,15 @@ Here's a combined example demonstrating the use of assignment and arithmetic ope
 # Assignment operators
 x = 10      # x is assigned 10
 y = 5       # y is assigned 5
+# Compound assignment operations
+x += y    # x is now 15
+x -= y    # x is now 10
+x *= y    # x is now 50
+x /= y    # x is now 10.0
+x %= y    # x is now 0.0
+x **= y   # x is now 0.0
+x //= y   # x is now 0.0
+
 
 # Arithmetic operations
 addition = x + y            # 15
@@ -91,14 +101,6 @@ modulus = x % y             # 0
 exponentiation = x ** y     # 100000
 floor_division = x // y     # 2
 
-# Compound assignment operations
-x += y    # x is now 15
-x -= y    # x is now 10
-x *= y    # x is now 50
-x /= y    # x is now 10.0
-x %= y    # x is now 0.0
-x **= y   # x is now 0.0
-x //= y   # x is now 0.0
 ```
 
 These operators provide the basic tools needed to perform and manipulate arithmetic operations and manage variable assignments efficiently in Python.

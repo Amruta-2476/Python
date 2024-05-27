@@ -12,33 +12,33 @@ In Python, several libraries work together to enable scientific computing, data 
 - Multidimensional image processing
 
 **Example**:
-```python
-from scipy import optimize
-
-# Example: finding the root of a function
-def f(x):
-    return x**2 - 4
-
-root = optimize.root_scalar(f, bracket=[0, 3])
-print(root.root)
+```
+import numpy as np
+from scipy import integrate
+# Define the function to integrate
+def func(x):
+    return x**2
+# Perform the integration
+result, error = integrate.quad(func, 0, 1)
+print("The integral of x^2 from 0 to 1 is:", result)
 ```
 
 ### 2. Matplotlib
-**Matplotlib** is a plotting library for creating static, interactive, and animated visualizations in Python. It is highly customizable and supports a wide range of plot types, including line plots, bar charts, histograms, scatter plots, and more.
+**Matplotlib** is a plotting library for creating static, interactive, and animated visualizations in Python. It supports a wide range of plot types, including line plots, bar charts, histograms, scatter plots, and more.  Allows customization of plots with labels, titles, and legends.
+● Can be integrated with other libraries like Pandas for easy data visualization.
+
 
 **Example**:
-```python
+```
 import matplotlib.pyplot as plt
-import numpy as np
 
-# Example: Simple line plot
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
+x = [1,2,3,4,5]
+y = [1,4,9,16,25]
 
-plt.plot(x, y)
-plt.xlabel('x-axis')
-plt.ylabel('y-axis')
-plt.title('Simple Sine Wave Plot')
+plt.plot(x,y,color='red')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line Plot')
 plt.show()
 ```
 
@@ -46,7 +46,7 @@ plt.show()
 **NumPy** (Numerical Python) is a foundational library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.
 
 **Example**:
-```python
+```
 import numpy as np
 
 # Example: Creating an array and performing basic operations
@@ -61,11 +61,13 @@ print("Standard Deviation:", np.std(arr))
 **pandas** is an open-source data analysis and manipulation library. It provides data structures such as Series (1-dimensional) and DataFrame (2-dimensional) for handling and analyzing data. It is particularly useful for working with structured data from various sources like CSV files, Excel spreadsheets, SQL databases, and more.
 
 **Example**:
-```python
+```
 import pandas as pd
 
 # Example: Creating a DataFrame
-data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35], 'City': ['New York', 'San Francisco', 'Los Angeles']}
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 
+        'Age': [25, 30, 35], 
+        'City': ['New York', 'San Francisco', 'Los Angeles']}
 df = pd.DataFrame(data)
 
 print(df)
@@ -76,7 +78,7 @@ print("Mean age:", df['Age'].mean())
 In Python, GUIs can be created using libraries such as Tkinter, PyQt, and Kivy. These libraries allow developers to build desktop applications with graphical elements like buttons, text fields, labels, and more.
 
 **Example** using Tkinter:
-```python
+```
 import tkinter as tk
 
 def on_button_click():
@@ -98,11 +100,12 @@ button.pack()
 root.mainloop()
 ```
 
+
 ### Integration Example
 These libraries can be used together to create powerful applications. For example, you could use NumPy for data manipulation, Matplotlib for data visualization, pandas for data analysis, and a GUI library like Tkinter to create an interactive application.
 
 **Integrated Example**:
-```python
+```
 import tkinter as tk
 from tkinter import messagebox
 import matplotlib.pyplot as plt
