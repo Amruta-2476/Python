@@ -2,7 +2,6 @@
 with open("data.txt", "w") as data:
     string = input("Enter a string to write into the file: ")
     data.write(string)
-
 # For reading the character from the file
 with open("data.txt", "r") as data:
     print("Content of the file:")
@@ -12,7 +11,6 @@ with open("data.txt", "r") as data:
 with open("data.txt", "a") as data:
     string_to_append = input("Enter a string to append to the file: ")
     data.write("\n" + string_to_append)
-
 # Open file for reading appended content
 with open("data.txt", "r") as data:
     print("Appended content of the file:")
