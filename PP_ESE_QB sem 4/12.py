@@ -1,5 +1,6 @@
 # Find the output of the following program.
 String = 'Welcome to Engineering session'
+# print(len(String))  # 30
 # slice(start, end, step)
 s1 = slice (3)
 s2 = slice (1,6,2)
