@@ -8,6 +8,6 @@ class Circle:
 
 radius = int(input("Enter radius of the circle: "))
 circle1 = Circle(radius)
-print(f"Circumference of circle of radius {radius} = {circle1.circumference()}")
+print(f"Circumference of circle of radius {radius} = {int(circle1.circumference())}")
 print(f"Area of circle of radius {radius} = {circle1.area()}")
 # print(f"Area of circle of radius {radius} = {circle1.area()} unit\u00B2")
