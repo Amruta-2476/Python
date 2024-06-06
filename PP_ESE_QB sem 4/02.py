@@ -24,6 +24,7 @@ check2.pack()
 
 # button widget
 btn = tk.Button(root, text='Click me', command=show)
+btn.config(font=("Arial", 15), bg="yellow", fg="blue")
 btn.pack()
 
 # listbox widget
