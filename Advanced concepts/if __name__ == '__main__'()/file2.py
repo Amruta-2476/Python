@@ -1,5 +1,5 @@
-import m01
-m01.greet('Ria')
+import file1
+file1.greet('Ria')
 
 # Output: 
 # Enter your name: 
@@ -12,9 +12,9 @@ m01.greet('Ria')
 #     n = input("Enter your name: ")
 #     greet(n)
 # this way the code inside the if block will only be executed when we run m01.py and not when we import it in m02.py
-# so we will not get the output "Enter your name: " when we import m01.py in m02.py
+# so we will not get the output "Enter your name: " when we import file1.py in file2.py
 
 
-'''  Here __name__ == m01
+'''  Here __name__ == file1
 Therefore output is only
 Hello, Ria '''
