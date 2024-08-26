@@ -2,6 +2,8 @@
 # pip install SpeechRecognition
 # then create an audio file with microphone and convert it to .wav extension
 
+# to RUN this open the terminal in NPTEL_COURSE using cd NPTEL_COURSE
+
 import speech_recognition as sr
 AUDIO_FILE = ("amruta_speek.wav")
 # use the audio file as the audio source
