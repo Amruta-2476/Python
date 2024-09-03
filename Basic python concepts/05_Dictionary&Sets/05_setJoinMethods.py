@@ -27,3 +27,23 @@ x.intersection_update(y)
 print(x)
 
 # > The difference between the sets is obtained using the .difference() method which returns a new set with items that are in one set but not the other. If you want to remove common elements
+
+
+album_set1 = set(["Thriller", 'AC/DC', 'Back in Black'])
+album_set2 = set([ "AC/DC", "Back in Black", "The Dark Side of the Moon"])
+album_set1.difference(album_set2)
+print(album_set1.difference(album_set2))
+
+print(album_set2.difference(album_set1))
+
+intersection = album_set1 & album_set2
+print(intersection)
+
+# Find the union of two sets
+print(album_set1.union(album_set2))
+
+# Check if superset
+print(set(album_set1).issuperset(album_set2) )
+
+# Check if subset
+print(set(album_set2).issubset(album_set1))

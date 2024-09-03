@@ -1,0 +1,11 @@
+Regular expressions (RegEx) are patterns used to match and manipulate strings of text. There are several special sequences in RegEx that can be used to match specific characters or patterns.
+
+Special Sequence	Meaning	Example
+\d	Matches any digit character (0-9)	"123" matches "\d\d\d"
+\D	Matches any non-digit character	"hello" matches "\D\D\D\D\D"
+\w	Matches any word character (a-z, A-Z, 0-9, and _)	"hello_world" matches "\w\w\w\w\w\w\w\w\w\w\w"
+\W	Matches any non-word character	"@#$%" matches "\W\W\W\W"
+\s	Matches any whitespace character (space, tab, newline, etc.)	"hello world" matches "\w\w\w\w\w\s\w\w\w\w\w"
+\S	Matches any non-whitespace character	"hello_world" matches "\S\S\S\S\S\S\S\S\S"
+\b	Matches the boundary between a word character and a non-word character	"cat" matches "\bcat\b" in "The cat sat on the mat"
+\B	Matches any position that is not a word boundary	"cat" matches "\Bcat\B" in "category" but not in "The cat sat on the mat"
